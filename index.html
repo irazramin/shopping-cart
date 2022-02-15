@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>My Shopping Cart</h1>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <div class="cart-container">
+          <div class="cart">
+            <div class="product-info">
+              <img class="product-img" src="images/product-1.png" alt="" />
+              <h4 class="product-name">iPhone 11 128GB Black</h4>
+            </div>
+            <div class="product-price-info">
+              <div class="product-quantity">
+                <button id="phone-minus" class="product-inc-decr-btn minus-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  value="1"
+                  id="phone-input"
+                  class="product-quntity-input"
+                />
+                <button id="phone-plus" class="product-inc-decr-btn plus-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <h4 class="product-price">$<span id="phone-price">1219</span></h4>
+              <img
+                src="images/remove.png"
+                id="remove-phone"
+                class="remove-product"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="cart">
+            <div class="product-info">
+              <img class="product-img" src="images/product-2.png" alt="" />
+              <h4 class="product-name">iPhone 11 Silicone Case - Black</h4>
+            </div>
+            <div class="product-price-info">
+              <div class="product-quantity">
+                <button id="case-minus" class="product-inc-decr-btn minus-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  value="1"
+                  id="case-input"
+                  class="product-quntity-input"
+                />
+                <button id="case-plus" class="product-inc-decr-btn plus-btn ">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <h4 class="product-price">$<span id="case-price">59</span></h4>
+              <img
+                src="images/remove.png"
+                id="remove-case"
+                class="remove-product"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="total-price-container">
+          <div class="sub-total">
+            <h4>Subtotal:</h4>
+            <h4>$<span id="sub-total">1219</span></h4>
+          </div>
+          <div class="tax">
+            <h4>Tax:</h4>
+            <h4>$<span id="tax">0</span></h4>
+          </div>
+          <div class="total-price">
+            <h4>Total:</h4>
+            <h4>$<span id="total-price">0</span></h4>
+          </div>
+        </div>
+
+        <button class="check-out" id="check-out-btn">Check Out</button>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
