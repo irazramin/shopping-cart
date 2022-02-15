@@ -80,11 +80,12 @@ main {
     background-color: #ffffff;
     cursor: pointer;
     border: 4px solid white;
+    font-weight: 900;
 }
 
 .product-quantity button:focus,
 .product-quantity input:focus {
-    border: 4px solid rgba(135, 207, 235, 0.755);
+    border: 4px solid rgba(135, 207, 235, 0.4);
     outline: none;
 }
 
@@ -123,6 +124,7 @@ product-price-remove-btn-container {
 
 .product-price-info img {
     width: 25px;
+    cursor: pointer;
 }
 
 .total-price-container {
