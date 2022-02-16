@@ -9,6 +9,7 @@ const casePrice = document.getElementById('case-price');
 const subTotal = document.getElementById('sub-total');
 const totalPrice = document.getElementById('total-price');
 const totalTax = document.getElementById('tax');
+const removeProduct = document.querySelectorAll('.remove-product');
 
 calculateTotalAmount()
 
@@ -37,7 +38,6 @@ function calculateTotalAmount(){
     subTotal.innerText = sub;
     totalTax.innerText = tax
     totalPrice.innerText = overAllTotal;
-    console.log(subTotal);
 }
 
 
@@ -56,3 +56,13 @@ casePlus.addEventListener('click', function () {
 caseMinus.addEventListener('click', function () {
   updateCartProduct(caseInput, casePrice, 59, false);
 });
+
+
+for(const product of removeProduct){
+    product.addEventListener('click',function(){
+       const cartItem =  product.parentElement;
+       const removeCartPrice = 
+       console.log(removeCartPrice);
+       cartItem.parentElement.remove();
+    })
+}
